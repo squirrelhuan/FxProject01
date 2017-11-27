@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="Lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="Lib/fastjson-1.1.45.android.jar"/>
+	<classpathentry kind="lib" path="Lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="Lib/kxml2-2.3.0.jar"/>
+	<classpathentry kind="lib" path="Lib/xmlpull_1_1_3_4c.jar"/>
+	<classpathentry kind="lib" path="Lib/poi-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="Lib/poi-ooxml-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="Lib/poi-ooxml-schemas-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="Lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="Lib/cglib-nodep-2.2.2.jar"/>
+	<classpathentry kind="lib" path="Lib/jdom.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

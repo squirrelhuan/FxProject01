@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setting>
+	<!-- setting模块 -->
+	<SettingMenu id="001" name="Setting">
+		<!-- android模块 -->
+		<SettingMenu id="001" name="android">
+			<key>path</key>
+			<value>D://android</value>
+			<title>AndroidSDK路径</title>
+			<SettingMenu id="001" name="android SDK">
+				<key>AndroidSDK</key>
+				<value>D://android</value>
+				<title>AndroidSDK路径</title>
+			</SettingMenu>
+			<SettingMenu id="001" name="12">
+				<key>path</key>
+				<value>D://android</value>
+				<title>AndroidSDK路径</title>
+				<SettingMenu id="001" name="121">
+					<key>path</key>
+					<value>D://android</value>
+					<title>AndroidSDK路径</title>
+				</SettingMenu>
+			</SettingMenu>
+		</SettingMenu>
+
+		<!-- java模块 -->
+		<SettingMenu id="001" name="Java">
+			<key>path</key>
+			<value>D://android</value>
+			<title>AndroidSDK路径</title>
+			<SettingMenu id="001" name="jdk">
+				<key>jdk</key>
+				<value>D://android</value>
+				<title>jdk路径</title>
+				<SettingMenu id="001" name="java01">
+					<key>path</key>
+					<value>D://android</value>
+					<title>AndroidSDK路径</title>
+				</SettingMenu>
+				<SettingMenu id="001" name="java02">
+					<key>path</key>
+					<value>D://android</value>
+					<title>AndroidSDK路径</title>
+				</SettingMenu>
+			</SettingMenu>
+			<SettingMenu id="001" name="jre">
+				<key>jre</key>
+				<value>D://android</value>
+				<title>jre路径</title>
+			</SettingMenu>
+			<SettingMenu id="001" name="333">
+				<key>path</key>
+				<value>D://android</value>
+				<title>AndroidSDK路径</title>
+			</SettingMenu>
+		</SettingMenu>
+		<SettingMenu id="001" name="C#">
+			<key>path</key>
+			<value>D://android</value>
+			<title>AndroidSDK路径</title>
+		</SettingMenu>
+		<SettingMenu id="001" name="PluginManager">
+		    <type>1</type>
+			<key>view</key>
+			<value>D://android</value>
+			<title>AndroidSDK路径</title>
+		</SettingMenu>
+	</SettingMenu>
+</Setting>  

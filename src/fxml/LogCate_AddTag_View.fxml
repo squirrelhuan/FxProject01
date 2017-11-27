@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Common_Disabe" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listener.window.LogCate_AddTag_listener">
+   <children>
+      <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FlowPane alignment="TOP_CENTER" prefHeight="151.0" prefWidth="253.0" style="-fx-background-color: #F2F2F2;">
+               <children>
+                  <AnchorPane prefHeight="154.0" prefWidth="253.0">
+                     <children>
+                        <TextField style="-fx-background-color: #CDCDCD;" text="标题" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label layoutX="8.0" layoutY="30.0" lineSpacing="5.0" prefHeight="86.0" prefWidth="235.0" text="  修改端口号l重启UdpServer,是否更改？" wrapText="true" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+                        <Button layoutX="35.0" layoutY="119.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="55.0" text="取消" />
+                        <Button layoutX="156.0" layoutY="119.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="55.0" text="确定" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </FlowPane>
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FlowPane alignment="TOP_CENTER" prefHeight="151.0" prefWidth="253.0" style="-fx-background-color: #F2F2F2;">
+               <children>
+                  <AnchorPane prefHeight="236.0" prefWidth="359.0">
+                     <children>
+                        <Label fx:id="lable_error" alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="20.0" textFill="RED" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0" />
+                        <Label layoutY="32.0" prefWidth="200.0" text="添加新的Logcate标签,以筛选符合条件的内容！" wrapText="true" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0" />
+                        <GridPane layoutX="20.0" layoutY="84.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="104.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="176.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField fx:id="textField_FilterName" prefHeight="23.0" prefWidth="129.0" GridPane.columnIndex="1" />
+                              <Label prefHeight="31.0" text="Filter Name：" />
+                              <Label prefHeight="31.0" text="by Log Tag：" GridPane.rowIndex="1" />
+                              <TextField fx:id="textField_Tag" prefHeight="23.0" prefWidth="129.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label prefHeight="31.0" text="by Application Name：" GridPane.rowIndex="2" />
+                              <Label prefHeight="31.0" text="by Log Level：" GridPane.rowIndex="3" />
+                              <TextField fx:id="textField_ApplicationName" prefHeight="23.0" prefWidth="129.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ChoiceBox fx:id="choiceBox_Leve" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                        <Button layoutX="156.0" layoutY="130.0" mnemonicParsing="false" onAction="#onClickedSaveButton" prefHeight="23.0" prefWidth="55.0" text="确定" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="40.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </FlowPane>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listener.window.Bottom_Window_listener">
+   <children>
+      <TabPane fx:id="tabPane_bottom" layoutX="1.0" layoutY="295.0" maxHeight="-Infinity" maxWidth="-Infinity" onScrollStarted="#onTabPaneStarted" prefHeight="160.0" prefWidth="600.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox alignment="TOP_RIGHT" prefHeight="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="Clipboard_Delete_Button" mnemonicParsing="false" onAction="#onClickedClipboardDeleteButton" onMouseEntered="#onMouseEntered" prefHeight="20.0" prefWidth="25.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/drawable/Delete_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="-1.0" right="-1.0" top="3.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="Clipboard_Copy_Button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseEntered="#onMouseEntered" prefHeight="20.0" prefWidth="25.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/drawable/Copy_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="-1.0" right="-1.0" top="3.0" />
+               </padding>
+            </Button>
+            <MenuButton fx:id="menuButton_windows" mnemonicParsing="false" text="Menu" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

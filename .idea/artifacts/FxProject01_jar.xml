@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact name="FxProject01:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FxProject01_jar</output-path>
+    <root id="root">
+      <element id="archive" name="FxProject01.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/resouces/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="FxProject01" />
+      </element>
+      <element id="library" level="module" name="JUnit4" module-name="FxProject01" />
+      <element id="library" level="project" name="Lib" />
+    </root>
+  </artifact>
+</component>

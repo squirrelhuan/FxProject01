@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Test">
+	<children>
+		<MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Close" />
+						<Menu fx:id="menu_new_text" mnemonicParsing="false" text="New">
+							<items>
+								<MenuItem fx:id="new_text_MenuItem" mnemonicParsing="false" onAction="#onNewText" text="New Text" />
+								<Menu mnemonicParsing="false" text="Test">
+									<items>
+										<MenuItem mnemonicParsing="false" onAction="#onClickedTcpServer" text="TCP Server" />
+										<MenuItem mnemonicParsing="false" text="TCP Client" />
+										<MenuItem mnemonicParsing="false" onAction="#onClickedUdpServer" text="UDP Server" />
+										<MenuItem mnemonicParsing="false" text="UDP Client" />
+										<MenuItem mnemonicParsing="false" text="UDP Group" />
+									</items>
+								</Menu>
+							</items>
+						</Menu>
+						<MenuItem fx:id="Exit_MenuItem" mnemonicParsing="false" onAction="#onClickExit" text="Exit" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Delete" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<SplitPane dividerPositions="0.7211055276381909" layoutX="240.0" layoutY="126.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+			<items>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+					<children>
+						<TabPane fx:id="tabPane_01" blendMode="BLUE" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onScrollStarted="#onTabPaneStarted" prefWidth="600.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<tabs>
+								<Tab fx:id="tab01" text="Tab 1">
+									<content>
+										<AnchorPane />
+									</content>
+								</Tab>
+								<Tab fx:id="tab02" text="Tab 2">
+									<content>
+										<AnchorPane prefHeight="1000.0" />
+									</content>
+								</Tab>
+							</tabs>
+						</TabPane>
+					</children>
+				</AnchorPane>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="598.0">
+					<children>
+						<TabPane fx:id="tabPane_011" layoutX="1.0" layoutY="295.0" maxHeight="-Infinity" maxWidth="-Infinity" onScrollStarted="#onTabPaneStarted" prefHeight="160.0" prefWidth="600.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<tabs>
+								<Tab fx:id="tab011" text="Console">
+									<content>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+									</content>
+								</Tab>
+								<Tab fx:id="tab021" text="LogCate">
+									<content>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+									</content>
+								</Tab>
+							</tabs>
+						</TabPane>
+					</children>
+				</AnchorPane>
+			</items>
+		</SplitPane>
+      <AnchorPane disable="true" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="UdpServer_Dialog" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505050;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <FlowPane alignment="TOP_CENTER" prefHeight="151.0" prefWidth="253.0" style="-fx-background-color: #F2F2F2;">
+                           <children>
+                              <AnchorPane prefHeight="154.0" prefWidth="253.0">
+                                 <children>
+                                    <TextField style="-fx-background-color: #CDCDCD;" text="标题" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Label layoutY="32.0" prefHeight="46.0" prefWidth="200.0" text="  修改端口号需要重启UdpServer,是否更改？" wrapText="true" AnchorPane.bottomAnchor="122.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+                                    <TextField layoutX="82.0" layoutY="74.0" prefHeight="23.0" prefWidth="129.0" />
+                                    <Label layoutX="26.0" layoutY="70.0" prefHeight="31.0" prefWidth="55.0" text="端口号：" />
+                                    <Button layoutX="36.0" layoutY="130.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="55.0" text="取消" />
+                                    <Button layoutX="156.0" layoutY="130.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="55.0" text="确定" />
+                                    <Label layoutX="110.0" layoutY="101.0" prefHeight="23.0" prefWidth="68.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Common_Dialog" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane opacity="0.15" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505050;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <FlowPane alignment="TOP_CENTER" prefHeight="151.0" prefWidth="253.0" style="-fx-background-color: #F2F2F2;">
+                           <children>
+                              <AnchorPane prefHeight="154.0" prefWidth="253.0">
+                                 <children>
+                                    <TextField style="-fx-background-color: #CDCDCD;" text="标题" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Label layoutX="8.0" layoutY="30.0" lineSpacing="5.0" prefHeight="86.0" prefWidth="235.0" text="  修改端口号l重启UdpServer,是否更改？" wrapText="true" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+                                    <Button layoutX="35.0" layoutY="119.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="55.0" text="取消" />
+                                    <Button layoutX="156.0" layoutY="119.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="55.0" text="确定" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+	</children>
+</AnchorPane>
