@@ -6,14 +6,9 @@
     <jar xmlns="C:\Users\huan\Desktop\adt_plugin.jar">C:\Users\huan\Desktop\adt_plugin.jar</jar>  
     <class xmlns="application.Test$1">application.Test$1</class> 
   </plugin>  
-  <plugin> 
-    <name xmlns="TestPlugin.jar">TestPlugin.jar</name>  
-    <jar xmlns="C:\Users\huan\Desktop\TestPlugin.jar">C:\Users\huan\Desktop\TestPlugin.jar</jar>  
-    <class xmlns="main.TestPlugin">main.TestPlugin</class> 
-  </plugin>  
   <plugin>
-    <name xmlns="CGQToolPluginDemo.jar">CGQToolPluginDemo.jar</name>
-    <jar xmlns="C:\Users\huan\Desktop\CGQToolPluginDemo.jar">C:\Users\huan\Desktop\CGQToolPluginDemo.jar</jar>
-    <class xmlns="sample.TestPlugin$1">sample.TestPlugin$1</class>
+    <name xmlns="TestPlugin.jar">TestPlugin.jar</name>
+    <jar xmlns="C:\Users\huan\Desktop\TestPlugin.jar">C:\Users\huan\Desktop\TestPlugin.jar</jar>
+    <class xmlns="main.TestPlugin">main.TestPlugin</class>
   </plugin>
 </plugins>

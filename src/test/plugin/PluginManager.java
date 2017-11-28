@@ -113,11 +113,11 @@ public class PluginManager {
 			//FileTools.writeFile(file, ((TextArea) edit_Txt).getText());
 			MySystem.out.println(file.getName()+"路径："+file.getAbsolutePath());
 			plugin = new Plugin(file.getName(),file.getAbsolutePath(),"chajian.class");
-			String[] jarname = null;
+			String jarname = null;
 			try {
-				jarname = JarUtils.findClassesImplementInterfaceFromJar("interfaces.PluginService", file.getAbsolutePath());
-			    plugin.setClassName(jarname[0]);
-				System.out.println(jarname[0]);
+				jarname = JarUtils.findClassesImplementInterfaceFromJar2("interfaces.PluginService", file.getAbsolutePath());
+			    plugin.setClassName(jarname);
+				System.out.println(jarname);
 			} catch (ClassNotFoundException | IOException e) {
 				e.printStackTrace();
 				MySystem.out.println("没有匹配到正确的插件");
