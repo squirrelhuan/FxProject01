@@ -10,11 +10,19 @@ import javafx.stage.Stage;
  */
 public class CButton extends Button{
 
+    private String text;
 
+    public CButton() {
+    }
+
+    public CButton(String text) {
+        this.text = text;
+        this.setText(text);
+    }
 
     public void setOnClickListener(CView.onClickListener onClickListener) {
         this.setOnAction((ActionEvent e) -> {
-           onClickListener.onClicked();
+           onClickListener.onClick(CButton.this);
         });
     }
 }

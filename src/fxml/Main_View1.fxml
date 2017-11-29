@@ -32,7 +32,8 @@
 								</Menu>
 							</items>
 						</Menu>
-						<MenuItem fx:id="Exit_MenuItem" mnemonicParsing="false" onAction="#onClickExit" text="Exit" />
+						<MenuItem fx:id="Restart_MenuItem" mnemonicParsing="false" onAction="#onClickRestart" text="Restart" />
+                  <MenuItem fx:id="Exit_MenuItem1" mnemonicParsing="false" onAction="#onClickExit" text="Exit" />
 					</items>
 				</Menu>
 				<Menu mnemonicParsing="false" text="Edit">

@@ -11,7 +11,14 @@ import javafx.scene.layout.VBox;
  */
 public class VerticleLayout extends VBox {
 
-    public void addView(Node view){
-        this.getChildren().add(view);
+    public void addView(Node... view){
+        if(view!=null){
+        for(Node node : view){
+            this.getChildren().add(node);
+        }
+        }else {
+            System.out.println("the view where you added may be null ,please check your code");
+        }
+
     }
 }
