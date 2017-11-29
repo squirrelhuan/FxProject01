@@ -6,9 +6,14 @@
     <jar xmlns="C:\Users\huan\Desktop\adt_plugin.jar">C:\Users\huan\Desktop\adt_plugin.jar</jar>  
     <class xmlns="application.Test$1">application.Test$1</class> 
   </plugin>  
+  <plugin> 
+    <name xmlns="TestPlugin.jar">TestPlugin.jar</name>  
+    <jar xmlns="C:\Users\squirrel桓\Desktop\TestPlugin.jar">C:\Users\squirrel桓\Desktop\TestPlugin.jar</jar>  
+    <class xmlns="main.TestPlugin">main.TestPlugin</class> 
+  </plugin>  
   <plugin>
-    <name xmlns="TestPlugin.jar">TestPlugin.jar</name>
-    <jar xmlns="C:\Users\huan\Desktop\TestPlugin.jar">C:\Users\huan\Desktop\TestPlugin.jar</jar>
-    <class xmlns="main.TestPlugin">main.TestPlugin</class>
+    <name xmlns="LineChartPlugin.jar">LineChartPlugin.jar</name>
+    <jar xmlns="C:\Users\squirrel桓\Desktop\LineChartPlugin.jar">C:\Users\squirrel桓\Desktop\LineChartPlugin.jar</jar>
+    <class xmlns="main.LineChartPlugin">main.LineChartPlugin</class>
   </plugin>
 </plugins>
