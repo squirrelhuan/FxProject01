@@ -13,7 +13,7 @@
   </plugin>  
   <plugin>
     <name xmlns="LineChartPlugin.jar">LineChartPlugin.jar</name>
-    <jar xmlns="C:\Users\squirrel桓\Desktop\LineChartPlugin.jar">C:\Users\squirrel桓\Desktop\LineChartPlugin.jar</jar>
+    <jar xmlns="C:\work\wk_idea\wk_idea\LineChartPlugin\classes\artifacts\LineChartPlugin_jar\LineChartPlugin.jar">C:\work\wk_idea\wk_idea\LineChartPlugin\classes\artifacts\LineChartPlugin_jar\LineChartPlugin.jar</jar>
     <class xmlns="main.LineChartPlugin">main.LineChartPlugin</class>
   </plugin>
 </plugins>
