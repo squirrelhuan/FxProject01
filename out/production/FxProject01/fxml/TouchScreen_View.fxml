@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listener.window.TouchScreen_listener">
+   <children>
+      <FlowPane alignment="CENTER_RIGHT" layoutX="187.0" layoutY="265.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#onClickedOkButton" prefWidth="60.0" text="Ok" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button cancelButton="true" mnemonicParsing="false" onAction="#onClickedCancleButton" prefWidth="60.0" text="Cancel" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+      <VBox fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="120.0" prefWidth="100.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="22.0">
+               <children>
+                  <Label prefHeight="22.0" text="当前X坐标：" />
+                  <TextField fx:id="textField_X" prefWidth="80.0" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="22.0">
+               <children>
+                  <Label prefHeight="22.0" text="当前Y坐标：" />
+                  <TextField fx:id="textField_Y" prefWidth="80.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="22.0">
+               <children>
+                  <Label prefHeight="22.0" text="点 击间 隔：" />
+                  <TextField fx:id="textField_Time" prefWidth="80.0" />
+                  <Label prefHeight="20.0" text="（ms/次）" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

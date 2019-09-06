@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="layoutPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Test">
+	<children>
+		<MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+                  <MenuItem mnemonicParsing="false" onAction="#onClickedOpenFileMenuItem" text="Open File..." />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickedSaveMenuItem" text="Save" />
+						<MenuItem mnemonicParsing="false" onAction="#onClickedSaveAsMenuItem" text="Save As..." />
+						<Menu fx:id="menu_new_text" mnemonicParsing="false" text="New">
+							<items>
+                        <MenuItem fx:id="new_android_project_MenuItem" mnemonicParsing="false" onAction="#onNewAndroidProject" text="New Android Project" />
+								<MenuItem fx:id="new_text_MenuItem" mnemonicParsing="false" onAction="#onNewText" text="New Text" />
+								<Menu mnemonicParsing="false" text="Test">
+									<items>
+										<MenuItem mnemonicParsing="false" onAction="#onClickedTcpServer" text="TCP Server" />
+										<MenuItem mnemonicParsing="false" onAction="#onClickedTcpClient" text="TCP Client" />
+										<MenuItem mnemonicParsing="false" onAction="#onClickedUdpServer" text="UDP Server" />
+										<MenuItem mnemonicParsing="false" text="UDP Client" />
+										<MenuItem mnemonicParsing="false" text="UDP Group" />
+									</items>
+								</Menu>
+							</items>
+						</Menu>
+						<MenuItem fx:id="Restart_MenuItem" mnemonicParsing="false" onAction="#onClickRestart" text="Restart" />
+                  <MenuItem fx:id="Exit_MenuItem1" mnemonicParsing="false" onAction="#onClickExit" text="Exit" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Delete" />
+                  <MenuItem mnemonicParsing="false" text="Updo" />
+					</items>
+				</Menu>
+            <Menu mnemonicParsing="false" text="Tool">
+               <items>
+                  <Menu mnemonicParsing="false" text="转换">
+                    <items>
+                        <Menu mnemonicParsing="false" text="类型转换">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#onClickedJavaToXmlMenuItem" text="Java To Xml" />
+                              <MenuItem mnemonicParsing="false" onAction="#onClickedXmlToJavaMenuItem" text="Xml To  Java" />
+                              <MenuItem mnemonicParsing="false" onAction="#onClickedExcelToJavaMenuItem" text="Excel To  Java" />
+                              <MenuItem mnemonicParsing="false" onAction="#onClickedImageToJsonMenuItem" text="image To  json" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="格式转换">
+                          <items>
+                            <MenuItem fx:id="Json_MenuItem" mnemonicParsing="false" onAction="#onClickedJsonMenuItem" text="Json" />
+                          </items>
+                        </Menu>
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="快捷工具">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onTouchScreen" text="模拟屏幕点击" />
+                        <MenuItem mnemonicParsing="false" onAction="#onCaptureScreen" text="截图 Ctrl+Alt+A" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAndroidAnnotation" text="android注释" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAndroidResourceString" text="android 资源文件（String）" />
+                        <MenuItem mnemonicParsing="false" onAction="#onJpsGetDescription" text="疾病查询翻译（精皮·士）" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Net Tool">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onClickedLocalAreaNetwork" text="Local Area Network" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Apk Tool">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onCaptureScreen" text="截图 Ctrl+Alt+A" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="menu_plugins" mnemonicParsing="false" text="Plugins">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onPluginAdd" text="Add ++" />
+                      <MenuItem mnemonicParsing="false" onAction="#onPluginTest" text="Plugin Test" />
+                    </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Window">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openHtmlEditor" text="HTMLEditor" />
+                  <Menu mnemonicParsing="false" text="转换">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#ShowMediaPlayerWindow" text="MediaPlayer" />
+                  <MenuItem mnemonicParsing="false" onAction="#ShowMediaCameraWindow" text="MediaCamera" />
+                  <MenuItem mnemonicParsing="false" onAction="#ShowSettingWindow" text="Setting" />
+               </items>
+            </Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem fx:id="onClickedAboutMenuItem" mnemonicParsing="false" onAction="#onClickedAboutMenuItem" text="About MyTool" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<SplitPane fx:id="splitPane_main" layoutX="240.0" layoutY="126.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+			<items>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+					<children>
+						<TabPane fx:id="tabPane_01" blendMode="BLUE" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onScrollStarted="#onTabPaneStarted" prefWidth="600.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<tabs>
+								<Tab fx:id="tab01" text="Tab 1">
+									<content>
+										<AnchorPane />
+									</content>
+								</Tab>
+							</tabs>
+						</TabPane>
+					</children>
+				</AnchorPane>
+			</items>
+		</SplitPane>
+      <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #D9D9D9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ProgressBar fx:id="progressBar_task" minHeight="5.0" prefHeight="12.0" prefWidth="60.0" progress="0.0" visible="false">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ProgressBar>
+            <Button fx:id="Clipboard_Delete_Button1" mnemonicParsing="false" onAction="#onClickedTaskManagerButton" onMouseEntered="#onMouseEntered" prefHeight="18.0" prefWidth="25.0">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/drawable/Task_Manager.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="3.0" left="-1.0" right="-1.0" top="3.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="2.0" right="3.0" top="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+	</children>
+</AnchorPane>

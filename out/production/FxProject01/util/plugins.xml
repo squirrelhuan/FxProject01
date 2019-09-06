@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+	<plugin>
+		<name>A客户插件</name>
+		<jar>D:/plugin/a-plugin.jar</jar>
+		<class>com.xxg.aplugin.APlugin</class>
+	</plugin>
+	<plugin>
+		<name>B客户插件</name>
+		<jar>D:/plugin/b-plugin.jar</jar>
+		<class>com.xxg.bplugin.BPlugin</class>
+	</plugin>
+	<plugin>
+		<name>C客户插件</name>
+		<jar>D:/plugin/c-plugin.jar</jar>
+		<class>com.xxg.cplugin.CPlugin</class>
+	</plugin>
+</plugins>
