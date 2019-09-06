@@ -11,9 +11,14 @@
     <jar xmlns="C:\Users\squirrel桓\Desktop\TestPlugin.jar">C:\Users\squirrel桓\Desktop\TestPlugin.jar</jar>  
     <class xmlns="main.TestPlugin">main.TestPlugin</class> 
   </plugin>  
+  <plugin> 
+    <name xmlns="LineChartPlugin.jar">LineChartPlugin.jar</name>  
+    <jar xmlns="/Users/huan/Desktop/LineChartPlugin.jar">/Users/huan/Desktop/LineChartPlugin.jar</jar>  
+    <class xmlns="main.LineChartHelper$Worker">main.LineChartPlugin</class> 
+  </plugin>  
   <plugin>
-    <name xmlns="LineChartPlugin.jar">LineChartPlugin.jar</name>
-    <jar xmlns="C:\work\wk_idea\wk_idea\LineChartPlugin\classes\artifacts\LineChartPlugin_jar\LineChartPlugin.jar">C:\work\wk_idea\wk_idea\LineChartPlugin\classes\artifacts\LineChartPlugin_jar\LineChartPlugin.jar</jar>
-    <class xmlns="main.LineChartPlugin">main.LineChartPlugin</class>
+    <name xmlns="AndroidAdbPlugin.jar">AndroidAdbPlugin.jar</name>
+    <jar xmlns="/Users/huan/IdeaProjects/AndroidADBPlugin/classes/artifacts/AndroidAdbPlugin_jar/AndroidAdbPlugin.jar">/Users/huan/IdeaProjects/AndroidADBPlugin/classes/artifacts/AndroidAdbPlugin_jar/AndroidAdbPlugin.jar</jar>
+    <class xmlns="main.AndroidADBPlugin">main.AndroidADBPlugin</class>
   </plugin>
 </plugins>
