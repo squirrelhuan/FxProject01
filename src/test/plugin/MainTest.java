@@ -13,7 +13,6 @@ import util.XMLParser;
 
 public class MainTest {
 	public static void main(String[] args) {
-
 		/*try {
 			List<Plugin> pluginList = XMLParser.getPluginList();
 			PluginManager pluginManager = new PluginManager(pluginList);
