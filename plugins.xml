@@ -2,23 +2,13 @@
 
 <plugins> 
   <plugin> 
-    <name xmlns="adt_plugin.jar">adt_plugin.jar</name>  
-    <jar xmlns="C:\Users\huan\Desktop\adt_plugin.jar">C:\Users\huan\Desktop\adt_plugin.jar</jar>  
-    <class xmlns="application.Test$1">application.Test$1</class> 
-  </plugin>  
-  <plugin> 
-    <name xmlns="TestPlugin.jar">TestPlugin.jar</name>  
-    <jar xmlns="C:\Users\squirrel桓\Desktop\TestPlugin.jar">C:\Users\squirrel桓\Desktop\TestPlugin.jar</jar>  
-    <class xmlns="main.TestPlugin">main.TestPlugin</class> 
-  </plugin>  
-  <plugin> 
     <name xmlns="LineChartPlugin.jar">LineChartPlugin.jar</name>  
-    <jar xmlns="/Users/huan/Desktop/LineChartPlugin.jar">/Users/huan/Desktop/LineChartPlugin.jar</jar>  
-    <class xmlns="main.LineChartHelper$Worker">main.LineChartPlugin</class> 
+    <jar xmlns="D:\IdeaWork\LineChartPlugin\classes\artifacts\LineChartPlugin_jar\LineChartPlugin.jar">D:\IdeaWork\LineChartPlugin\classes\artifacts\LineChartPlugin_jar\LineChartPlugin.jar</jar>  
+    <class xmlns="main.LineChartHelper$Worker">main.LineChartHelper$Worker</class> 
   </plugin>  
-  <plugin>
-    <name xmlns="AndroidAdbPlugin.jar">AndroidAdbPlugin.jar</name>
-    <jar xmlns="/Users/huan/IdeaProjects/AndroidADBPlugin/classes/artifacts/AndroidAdbPlugin_jar/AndroidAdbPlugin.jar">/Users/huan/IdeaProjects/AndroidADBPlugin/classes/artifacts/AndroidAdbPlugin_jar/AndroidAdbPlugin.jar</jar>
-    <class xmlns="main.AndroidADBPlugin">main.AndroidADBPlugin</class>
-  </plugin>
+  <plugin> 
+    <name xmlns="AndroidAdbPlugin.jar">AndroidAdbPlugin.jar</name>  
+    <jar xmlns="D:\IdeaWork\AndroidADBPlugin\classes\artifacts\AndroidAdbPlugin_jar\AndroidAdbPlugin.jar">D:\IdeaWork\AndroidADBPlugin\classes\artifacts\AndroidAdbPlugin_jar\AndroidAdbPlugin.jar</jar>  
+    <class xmlns="main.AndroidADBPlugin$9">main.AndroidADBPlugin$9</class> 
+  </plugin> 
 </plugins>

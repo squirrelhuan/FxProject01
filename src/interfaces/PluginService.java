@@ -5,6 +5,8 @@ import javafx.scene.Parent;
 public abstract class PluginService {
 
 	public Lorder mLorder;
+	public PluginService() {
+	}
 	/**
 	 * 开始初始化执行
 	 * @param lorder

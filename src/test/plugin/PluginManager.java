@@ -62,6 +62,7 @@ public class PluginManager {
 	public PluginService getInstance(String className) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		// 插件实例化对象，插件都是实现PluginService接口
 		Class<?> clazz = urlClassLoader.loadClass(className);
+		System.out.println(className);
 		Object instance = clazz.newInstance();
 
 		return (PluginService)instance;
